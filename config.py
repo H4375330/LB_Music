@@ -22,7 +22,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 180))
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "6203163206"))
+OWNER_ID = int(getenv("OWNER_ID", "6786742484"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -38,8 +38,9 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/learning_bots")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/learningbots79")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Cutipiemusicbot
+")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/JointFamily235")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -77,21 +78,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
+    "START_IMG_URL", "https://graph.org/file/67b87e81ae5a07d3ce5a0.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
+    "PING_IMG_URL", "https://graph.org/file/67b87e81ae5a07d3ce5a0.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-STATS_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-TELEGRAM_AUDIO_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-TELEGRAM_VIDEO_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-STREAM_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/67b87e81ae5a07d3ce5a0.jpg"
+STATS_IMG_URL = "https://graph.org/file/67b87e81ae5a07d3ce5a0.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org/file/67b87e81ae5a07d3ce5a0.jpg"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/67b87e81ae5a07d3ce5a0.jpg"
+STREAM_IMG_URL = "https://graph.org/file/67b87e81ae5a07d3ce5a0.jpg"
 SOUNCLOUD_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
 YOUTUBE_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
 SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/b490638fd73cd0ec1d1ad.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/67b87e81ae5a07d3ce5a0.jpg"
 
 
 def time_to_seconds(time):
@@ -103,7 +104,8 @@ DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 
 
 if SUPPORT_CHANNEL:
-    if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
+    if not re.match("(?:http|https):https://t.me/Cutipiemusicbot
+", SUPPORT_CHANNEL):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
         )
@@ -111,5 +113,6 @@ if SUPPORT_CHANNEL:
 if SUPPORT_CHAT:
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
         raise SystemExit(
-            "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
+            "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://t.me/Cutipiemusicbot
+"
         )
